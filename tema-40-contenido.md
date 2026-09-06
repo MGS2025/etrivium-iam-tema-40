@@ -625,6 +625,8 @@ La distinción que se pregunta: **el diseño universal se aplica a todos y de an
 
 ## 4. Marco jurídico y aplicación en la Administración pública
 
+> **Material complementario.** El enunciado oficial de este tema no nombra este apartado. Se mantiene porque sitúa la materia en el Ayuntamiento y en la normativa que le aplica, pero lo exigible es lo que enumera el título del tema.
+
 Esta sección **no figura en el esqueleto de partida** y se ha añadido de forma expresa, por dos razones. La primera es de examen: en una convocatoria de una Administración local, la pregunta sobre videoconferencia que tiene más probabilidad de aparecer **no es técnica sino jurídica** —cuándo puede un Pleno reunirse a distancia y qué hay que garantizar—, y ningún otro tema del temario la cubre. La segunda es de coherencia: las tres materias del enunciado convergen en un mismo punto, que es una **sesión administrativa válida celebrada a distancia**. Se somete a validación en el documento correspondiente.
 
 ### 4.1. Las sesiones a distancia de los órganos colegiados

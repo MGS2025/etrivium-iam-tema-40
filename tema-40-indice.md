@@ -45,7 +45,7 @@
    3.3.1. Accesibilidad universal en salas multimedia
    3.3.2. Mantenimiento preventivo y gestión de incidencias
 
-4. **Marco jurídico y aplicación en la Administración pública**
+4. **Marco jurídico y aplicación en la Administración pública (material complementario)**
    4.1. Las sesiones a distancia de los órganos colegiados
    4.2. Protección de datos y grabación de reuniones
    4.3. Adecuación al Esquema Nacional de Seguridad
