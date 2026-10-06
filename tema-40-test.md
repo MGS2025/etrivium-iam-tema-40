@@ -453,7 +453,7 @@ C) H.239
 
 <details><summary>Respuesta</summary>
 
-**Correcta: C) H.239** Es el mecanismo del doble flujo o *dual stream*, y es el dato de H.323 más preguntado después de los cuatro elementos de la arquitectura. H.235 se ocupa de la seguridad y el cifrado, y la serie H.450.x, de los servicios suplementarios como la transferencia o el desvío.
+**Correcta: C) H.239** Es el mecanismo del doble flujo o *dual stream*, y es el dato de H.323 más relevante después de los cuatro elementos de la arquitectura. H.235 se ocupa de la seguridad y el cifrado, y la serie H.450.x, de los servicios suplementarios como la transferencia o el desvío.
 
 *Referencia: §2.2.1 [H239]*
 </details>
@@ -929,7 +929,7 @@ C) En el lugar desde el que se haya realizado la convocatoria de la sesión
 
 <details><summary>Respuesta</summary>
 
-**Correcta: B) En el lugar donde tenga la sede el órgano colegiado y, en su defecto, donde esté ubicada la presidencia** Es una regla aparentemente teórica con consecuencias prácticas de competencia y de régimen jurídico del acuerdo, y se pregunta con frecuencia por su literalidad.
+**Correcta: B) En el lugar donde tenga la sede el órgano colegiado y, en su defecto, donde esté ubicada la presidencia** Es una regla aparentemente teórica con consecuencias prácticas de competencia y de régimen jurídico del acuerdo.
 
 *Referencia: §4.1 [L40-2015]*
 </details>
@@ -946,7 +946,7 @@ C) Solo cuando concurran situaciones excepcionales de fuerza mayor, de grave rie
 
 <details><summary>Respuesta</summary>
 
-**Correcta: C) Solo cuando concurran situaciones excepcionales de fuerza mayor, de grave riesgo colectivo o catástrofes públicas apreciadas por el alcalde o presidente** Es el régimen específico y más restrictivo del ámbito local, introducido por el Real Decreto-ley 11/2020. La trampa de examen consiste en dar la respuesta del régimen general en un supuesto de entidad local.
+**Correcta: C) Solo cuando concurran situaciones excepcionales de fuerza mayor, de grave riesgo colectivo o catástrofes públicas apreciadas por el alcalde o presidente** Es el régimen específico y más restrictivo del ámbito local, introducido por el Real Decreto-ley 11/2020. El error habitual consiste en dar la respuesta del régimen general en un supuesto de entidad local.
 
 *Referencia: §4.1 [LBRL]*
 </details>

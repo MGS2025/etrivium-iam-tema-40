@@ -18,13 +18,13 @@ El enunciado oficial (BOAM 10.032, tema 40) enumera **tres materias**. Correspon
 | Acondicionamiento de salas y equipos | §3 | ✅ Completo |
 | — Marco jurídico y aplicación en la Administración pública (**añadido**, no está en el enunciado ni en el esqueleto) | §4 | ✅ Completo · **se somete a validación** |
 
-El **esqueleto de partida** (`Test_Prompting/temas agosto/40.md`) se ha seguido **literalmente en §1, §2 y §3**: sus tres bloques de primer nivel son las tres primeras secciones, sus diez bloques de segundo nivel son los diez primeros epígrafes y sus veinte bloques de tercer nivel son los veinte subepígrafes, sin promover ni degradar ningún nivel. Es, con el T34 y el T37, el tercer tema de la serie cuyo esqueleto mapea sin ajuste a los tres niveles de numeración.
+El **esqueleto de partida** se ha seguido **literalmente en §1, §2 y §3**: sus tres bloques de primer nivel son las tres primeras secciones, sus diez bloques de segundo nivel son los diez primeros epígrafes y sus veinte bloques de tercer nivel son los veinte subepígrafes, sin promover ni degradar ningún nivel. Es, con el T34 y el T37, el tercer tema de la serie cuyo esqueleto mapea sin ajuste a los tres niveles de numeración.
 
 ### 1.1. La sección §4 añadida: por qué, y qué pasa si se rechaza
 
 Es la única desviación respecto del esqueleto y conviene explicarla y someterla expresamente a decisión.
 
-**Por qué se ha añadido.** Por dos razones. La primera es de examen: en una convocatoria de una **Administración local**, la pregunta sobre videoconferencia con más probabilidad de aparecer **no es técnica sino jurídica** —cuándo puede un órgano colegiado municipal reunirse a distancia y qué hay que garantizar—, y **ningún otro tema del temario oficial la cubre**: el T39 trata el ENS y el ENI, y los T3 y T4 tratan la organización municipal, pero el régimen de las sesiones a distancia no aparece en ninguno. La segunda es de coherencia interna: las tres materias del enunciado convergen en un mismo punto, que es **una sesión administrativa válida celebrada a distancia**, y esa convergencia pedía una sección de cierre.
+**Por qué se ha añadido.** Por dos razones. La primera es de enfoque: en una convocatoria de una **Administración local**, la cuestión más relevante sobre videoconferencia **no es técnica sino jurídica** —cuándo puede un órgano colegiado municipal reunirse a distancia y qué hay que garantizar—, y **ningún otro tema del temario oficial la cubre**: el T39 trata el ENS y el ENI, y los T3 y T4 tratan la organización municipal, pero el régimen de las sesiones a distancia no aparece en ninguno. La segunda es de coherencia interna: las tres materias del enunciado convergen en un mismo punto, que es **una sesión administrativa válida celebrada a distancia**, y esa convergencia pedía una sección de cierre.
 
 **Qué pasa si María, Ana o el IAM prefieren no incorporarla.** Su contenido se redistribuye sin pérdida: **§4.1** (sesiones a distancia) pasa a §2.4.1, **§4.2** (protección de datos y grabación) pasa a §1.3.1 y **§4.3** (adecuación al ENS) se reparte entre §1.3 y §3.2. La reestructuración es mecánica y no obliga a reescribir. **El diagrama D18 y las preguntas P53 a P60 del test seguirían siendo válidos** con la referencia de epígrafe actualizada.
 
@@ -32,7 +32,7 @@ Es la única desviación respecto del esqueleto y conviene explicarla y someterl
 
 - **4 secciones · 13 epígrafes · 20 subepígrafes** (numeración de tres niveles, `N.M.K`, coherente con el resto de la serie técnica).
 - **~20.400 palabras** medidas con `wc -w`. Queda en la mitad alta de la serie, por detrás de T32 (≈25.000), T33 (≈24.500), T37 (≈23.000) y T34 (≈21.500), y por delante de T29 (≈21.200) y T30 (≈21.400). La extensión es proporcionada al enunciado: tres materias, una de ellas —el acondicionamiento— ajena a la informática y con normativa propia.
-- **4 tipos de callout**: `[DATO CLAVE EXAMEN]`, `[EJERCICIO RESUELTO]`, `[EJEMPLO AYTO MADRID]` y `[REFERENCIA CRUZADA]`.
+- **4 tipos de callout**: `[DATO CLAVE]`, `[EJERCICIO RESUELTO]`, `[EJEMPLO DE APLICACIÓN EN EL AYTO]` y `[RELACIÓN CON OTROS TEMAS]`.
 - **Caso de referencia transversal**: el Ayuntamiento despliega una plataforma corporativa de trabajo en grupo y acondiciona el Salón de Sesiones de una Junta Municipal de Distrito más cinco salas de reunión. Atraviesa las cuatro secciones y enlaza con los tres casos prácticos.
 - Cierre con un bloque de **«los diez datos que no se pueden fallar»**, no numerado, a modo de resumen memorístico de última hora.
 - **Sin fragmentos de código.** Decisión deliberada, igual que en T26, T28, T29, T30, T32, T33, T34 y T37: el enunciado no menciona ningún lenguaje y lo memorizable son **numeraciones de RFC y de recomendaciones de la UIT, tasas binarias, umbrales de retardo, valores acústicos y lumínicos, fórmulas de dimensionamiento, plazos normativos y códigos del ENS**. Se han concentrado en tablas y en los diagramas D7, D8, D13, D14, D16, D17 y D18.
@@ -99,7 +99,7 @@ Son la aportación diferencial de este tema frente a los temarios del mercado:
 | §3 Acondicionamiento de salas y equipos | **12** (P41-P52) | 5 A · 3 B · 4 C |
 | §4 Marco jurídico y aplicación en la Administración | **8** (P53-P60) | 2 A · 3 B · 3 C |
 
-  Ninguna sección queda por debajo de 8 preguntas. El mayor peso de §2 es deliberado y defendible: es la materia con más contenido técnico cerrado y la que más preguntas produce en un examen.
+  Ninguna sección queda por debajo de 8 preguntas. El mayor peso de §2 es deliberado y defendible: es la materia con más contenido técnico cerrado.
 - **Verificación automática**: 60 preguntas, 3 opciones únicas por pregunta, **coincidencia exacta entre el texto de la opción correcta y el de la solución** en las 60, y referencia a epígrafe y fuente en las 60.
 - **Cinco preguntas de cálculo o de razonamiento cuantitativo** (P19 flujos de la malla, P20 cuello de botella de la subida, P44 volumen frente al umbral de 350 m³, P48 fórmula de DISCAS, P49 origen del factor 3438), pensadas para la parte práctica del examen.
 
@@ -117,7 +117,7 @@ Cada caso suma **10 puntos** repartidos en cuatro cuestiones, con solución orie
 
 Los 18 diagramas son SVG inline, sin dependencias externas, con `role="img"` y `aria-label` descriptivo en español, y con las clases CSS sufijadas por número para evitar colisiones de estilo entre ellos.
 
-**Los seis que hay que memorizar**, por orden de rentabilidad en un examen: **D7** (punto a punto, malla y servidor central, con las fórmulas y la tabla de crecimiento), **D8** (MCU frente a SFU fila a fila), **D12** (STUN, TURN e ICE con los tres tipos de candidato), **D14** (los cuatro umbrales de calidad y el marcado DSCP), **D16** (las cifras del DB-HR y de la UNE-EN 12464-1) y **D18** (los dos regímenes de la sesión a distancia y las medidas del ENS sobre la sala).
+**Los seis que hay que memorizar**, por orden de prioridad: **D7** (punto a punto, malla y servidor central, con las fórmulas y la tabla de crecimiento), **D8** (MCU frente a SFU fila a fila), **D12** (STUN, TURN e ICE con los tres tipos de candidato), **D14** (los cuatro umbrales de calidad y el marcado DSCP), **D16** (las cifras del DB-HR y de la UNE-EN 12464-1) y **D18** (los dos regímenes de la sesión a distancia y las medidas del ENS sobre la sala).
 
 **Reglas de composición aplicadas desde el origen**, conforme a las lecciones acumuladas en la serie:
 

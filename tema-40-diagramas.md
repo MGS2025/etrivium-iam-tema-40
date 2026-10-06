@@ -22,7 +22,7 @@
 | D5 | Edición concurrente: bloqueo, transformación operacional y CRDT | §1.2.2 | Comparativa de tres vías | 680×346 |
 | D6 | El ciclo de vida de la información en el espacio colaborativo | §1.3 | Cadena de controles | 680×326 |
 | D7 | Punto a punto, malla y servidor central: cuántos flujos | §2.1.1 | Topologías + cálculo | 680×352 |
-| D8 | MCU frente a SFU: la comparación que más se pregunta | §2.1.2 | Tabla-esquema | 680×352 |
+| D8 | MCU frente a SFU: la comparación central | §2.1.2 | Tabla-esquema | 680×352 |
 | D9 | H.323: los cuatro elementos y los protocolos internos | §2.2.1 | Arquitectura | 680×362 |
 | D10 | SIP: el establecimiento de una llamada paso a paso | §2.2.1 | Diagrama de secuencia | 680×346 |
 | D11 | La pila de WebRTC y el bloque de RFC de enero de 2021 | §2.2.2 | Pila de protocolos | 680×352 |
@@ -39,13 +39,13 @@
 ## D1 · Las 3C del trabajo en grupo y la matriz de Johansen
 
 **Sección**: §1 — Herramientas de trabajo en grupo
-**Propósito**: Fijar de una sola vez los dos esquemas de clasificación que más se preguntan: las tres funciones del *groupware* y la matriz de dos ejes de Johansen, con ejemplos colocados en su celda.
+**Propósito**: Fijar de una sola vez los dos esquemas de clasificación del tema: las tres funciones del *groupware* y la matriz de dos ejes de Johansen, con ejemplos colocados en su celda.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Las tres funciones del trabajo en grupo (comunicación, coordinación y colaboración) y la matriz de Johansen, que clasifica el groupware según dos ejes, el tiempo y el lugar, en cuatro celdas: cara a cara, síncrono distribuido, asíncrono en el mismo lugar y asíncrono distribuido">
   <style>.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 10px system-ui,sans-serif;fill:#0055a0}.d1{font:9px system-ui,sans-serif;fill:#333}.n1{font:8.5px system-ui,sans-serif;fill:#666}.w1{font:700 11px system-ui,sans-serif;fill:#fff}.g1{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
   <text x="340" y="19" text-anchor="middle" class="h1">Las 3C del trabajo en grupo y la matriz de Johansen</text>
-  <text x="340" y="35" text-anchor="middle" class="n1">Los dos esquemas de clasificación que más se preguntan de toda la sección</text>
+  <text x="340" y="35" text-anchor="middle" class="n1">Los dos esquemas de clasificación clave de toda la sección</text>
 
   <text x="24" y="53" class="k1">LAS TRES FUNCIONES (3C)</text>
   <rect x="22" y="60" width="272" height="42" rx="4" fill="#eef4fa"/>
@@ -99,7 +99,7 @@
 
   <rect x="22" y="212" width="636" height="52" rx="5" fill="none" stroke="#0055a0" stroke-width="1.5"/>
   <text x="340" y="230" text-anchor="middle" class="k1">CSCW es la DISCIPLINA (Grief y Cashman, 1984) · GROUPWARE es el PRODUCTO</text>
-  <text x="340" y="245" text-anchor="middle" class="d1">La pregunta típica da una herramienta y pide su celda. El correo va abajo a la derecha; la videoconferencia, arriba a la derecha</text>
+  <text x="340" y="245" text-anchor="middle" class="d1">El caso típico da una herramienta y pide su celda. El correo va abajo a la derecha; la videoconferencia, arriba a la derecha</text>
   <text x="340" y="258" text-anchor="middle" class="d1">Cuando una organización dice que la herramienta no funciona, lo que falla casi siempre es la COORDINACIÓN, no la comunicación</text>
 
   <text x="658" y="288" text-anchor="end" class="n1">[Fuente: Ellis, Gibbs y Rein (CACM, 1991) · Johansen (1988)]</text>
@@ -284,7 +284,7 @@
   <text x="32" y="211" class="d4">Canal bidireccional y persistente, abierto promoviendo una conexión HTTP. Sostiene el «alguien está escribiendo» y la señalización</text>
 
   <rect x="22" y="232" width="636" height="58" rx="5" fill="none" stroke="#d13c3c" stroke-width="1.5"/>
-  <text x="340" y="249" text-anchor="middle" class="r4">DOS TRAMPAS DE EXAMEN</text>
+  <text x="340" y="249" text-anchor="middle" class="r4">DOS TRAMPAS COMUNES</text>
   <text x="340" y="266" text-anchor="middle" class="d4">XMPP NO es un protocolo de videoconferencia: su señalización multimedia es la extensión Jingle (XEP-0166)</text>
   <text x="340" y="281" text-anchor="middle" class="d4">Y la presencia publicada es un dato sobre la actividad del empleado: arts. 87 y 88 de la LOPDGDD</text>
 
@@ -297,7 +297,7 @@
 ## D5 · Edición concurrente: bloqueo, transformación operacional y CRDT
 
 **Sección**: §1.2.2 — Gestión documental y edición concurrente
-**Propósito**: Contraponer las tres únicas familias de solución al problema de la actualización perdida, con su coste y con la pista que las delata en un enunciado de examen.
+**Propósito**: Contraponer las tres únicas familias de solución al problema de la actualización perdida, con su coste y con la pista que las delata en un enunciado.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 346" role="img" aria-label="Las tres familias de solución a la edición concurrente de documentos: bloqueo pesimista, transformación operacional con servidor central y tipos de datos replicados sin conflictos o CRDT, comparadas por simultaneidad, necesidad de servidor central y soporte de trabajo sin conexión">
@@ -399,7 +399,7 @@
   <text x="600" y="108" text-anchor="middle" class="c6">mp.si.5</text>
 
   <rect x="22" y="122" width="636" height="52" rx="4" fill="#fbe9e9"/>
-  <text x="32" y="139" class="r6">LA MEDIDA MÁS OLVIDADA DEL ENS Y LA MÁS PREGUNTABLE: mp.info.5, LIMPIEZA DE DOCUMENTOS</text>
+  <text x="32" y="139" class="r6">LA MEDIDA MÁS OLVIDADA DEL ENS: mp.info.5, LIMPIEZA DE DOCUMENTOS</text>
   <text x="32" y="153" class="d6">«Se retirará toda la información adicional contenida en CAMPOS OCULTOS, METADATOS, COMENTARIOS O REVISIONES ANTERIORES,</text>
   <text x="32" y="166" class="d6">salvo cuando sea pertinente para el receptor». Confidencialidad. APLICA EN LOS TRES NIVELES, incluido el BAJO</text>
 
@@ -503,7 +503,7 @@
 
 ---
 
-## D8 · MCU frente a SFU: la comparación que más se pregunta
+## D8 · MCU frente a SFU: la comparación central
 
 **Sección**: §2.1.2 — Infraestructura central de conmutación: MCU y SFU
 **Propósito**: Fijar la comparación fila a fila, incluida la consecuencia que casi nunca se explica: la MCU impide el cifrado extremo a extremo y la SFU lo permite mediante SFrame.
@@ -511,7 +511,7 @@
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" role="img" aria-label="Comparación entre la unidad de control multipunto (MCU), que decodifica, mezcla y vuelve a codificar, y la unidad de reenvío selectivo (SFU), que reenvía los flujos sin decodificarlos, en siete criterios: bajada, cómputo del servidor, retardo, composición, cifrado extremo a extremo, exigencia al cliente y uso típico">
   <style>.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10px system-ui,sans-serif;fill:#0055a0}.d8{font:9px system-ui,sans-serif;fill:#333}.n8{font:8.5px system-ui,sans-serif;fill:#666}.w8{font:700 10px system-ui,sans-serif;fill:#fff}.r8{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g8{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
-  <text x="340" y="19" text-anchor="middle" class="h8">MCU frente a SFU: la pregunta más probable de toda la sección 2</text>
+  <text x="340" y="19" text-anchor="middle" class="h8">MCU frente a SFU: la comparación central de la sección 2</text>
 
   <rect x="22" y="32" width="312" height="66" rx="4" fill="#fdf3e3"/>
   <rect x="22" y="32" width="312" height="22" rx="4" fill="#e89822"/>
@@ -588,7 +588,7 @@
 ## D9 · H.323: los cuatro elementos y los protocolos internos
 
 **Sección**: §2.2.1 — Protocolos de señalización H.323 y SIP
-**Propósito**: Fijar la arquitectura de H.323 con la nomenclatura exacta que se pregunta y su versión vigente, que casi ningún temario recoge bien.
+**Propósito**: Fijar la arquitectura de H.323 con la nomenclatura exacta y su versión vigente, que casi ningún temario recoge bien.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 362" role="img" aria-label="Arquitectura de H.323 con sus cuatro elementos: terminal, pasarela, controlador de acceso y unidad de control multipunto, y los protocolos internos H.225.0 de señalización, H.245 de control, H.235 de seguridad, H.239 de segundo flujo de vídeo y la serie H.460 de travesía de cortafuegos">
@@ -620,7 +620,7 @@
   <text x="583" y="96" text-anchor="middle" style="fill:#dff0e8;font:8.5px system-ui,sans-serif">multipunto, compuesta de</text>
   <text x="583" y="109" text-anchor="middle" style="fill:#dff0e8;font:8.5px system-ui,sans-serif">MC (control) + MP (proceso)</text>
 
-  <text x="24" y="140" class="k9">LOS PROTOCOLOS DE LA FAMILIA — se preguntan por lo que hace cada uno</text>
+  <text x="24" y="140" class="k9">LOS PROTOCOLOS DE LA FAMILIA — lo que hace cada uno</text>
 
   <rect x="22" y="148" width="312" height="22" rx="3" fill="#eef4fa"/>
   <text x="30" y="163" class="d9"><tspan class="k9">H.225.0</tspan>  ·  RAS y señalización de llamada</text>
@@ -637,7 +637,7 @@
   <text x="354" y="215" class="d9"><tspan class="k9">H.460.18/.19</tspan>  ·  Travesía de NAT y cortafuegos</text>
 
   <rect x="22" y="234" width="636" height="40" rx="4" fill="#fdf3e3"/>
-  <text x="32" y="250" class="k9">H.239, EL DATO DE H.323 MÁS PREGUNTADO DESPUÉS DE LOS CUATRO ELEMENTOS</text>
+  <text x="32" y="250" class="k9">H.239, EL DATO DE H.323 MÁS RELEVANTE DESPUÉS DE LOS CUATRO ELEMENTOS</text>
   <text x="32" y="265" class="d9">Es el mecanismo del SEGUNDO FLUJO DE VÍDEO: permite ver a la vez a la persona que habla y la presentación que comparte</text>
 
   <rect x="22" y="284" width="636" height="44" rx="5" fill="none" stroke="#0055a0" stroke-width="1.5"/>
@@ -765,7 +765,7 @@
   <text x="356" y="265" class="d11">negociadas por DTLS-SRTP; datos por SCTP sobre DTLS</text>
 
   <text x="32" y="278" class="d11">intercambia: descripciones SDP con oferta/respuesta (JSEP)</text>
-  <text x="356" y="278" class="d11">Es una pregunta capciosa clásica: la respuesta es NO opcional</text>
+  <text x="356" y="278" class="d11">Por tanto, el cifrado NO es opcional</text>
 
   <rect x="22" y="300" width="636" height="24" rx="4" fill="#fdf3e3"/>
   <text x="340" y="316" text-anchor="middle" class="k11">CÓDECS OBLIGATORIOS: audio, OPUS y G.711 (RFC 7874) · vídeo, VP8 y H.264 Constrained Baseline (RFC 7742)</text>
@@ -867,7 +867,7 @@
 ## D13 · Códecs de audio y vídeo: tabla de decisión
 
 **Sección**: §2.3.1 — Códecs de compresión de audio y vídeo
-**Propósito**: Concentrar en un solo sitio los códecs con su año, su organismo y su tasa, y marcar los cuatro obligatorios en WebRTC, que se preguntan como conjunto.
+**Propósito**: Concentrar en un solo sitio los códecs con su año, su organismo y su tasa, y marcar los cuatro obligatorios en WebRTC, que conviene retener como conjunto.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 346" role="img" aria-label="Tabla de códecs de vídeo y de audio usados en videoconferencia, con su organismo, año y característica principal, marcando en verde los cuatro obligatorios en WebRTC: Opus y G punto 711 en audio y VP8 y H punto 264 en vídeo, y mostrando la escala de eficiencia por generación">
@@ -945,7 +945,7 @@
 ## D14 · Los cuatro parámetros de calidad y sus umbrales
 
 **Sección**: §2.3.2 — Calidad de servicio y gestión de ancho de banda
-**Propósito**: Reunir los cuatro umbrales que se preguntan como conjunto, con el efecto perceptible de cada uno y el marcado DSCP recomendado.
+**Propósito**: Reunir los cuatro umbrales como conjunto, con el efecto perceptible de cada uno y el marcado DSCP recomendado.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-label="Los cuatro parámetros de calidad de una comunicación en tiempo real con sus umbrales: ancho de banda según resolución, retardo de 150 milisegundos según la recomendación G punto 114, fluctuación por debajo de 30 milisegundos y pérdida de paquetes por debajo del 1 por ciento; con las tres estrategias de mejora y el marcado DSCP recomendado por la RFC 8837">
@@ -1104,7 +1104,7 @@
 ## D16 · Acondicionamiento de la sala: acústica y luz, con sus cotas
 
 **Sección**: §3.1.1 — Acústica, insonorización y acondicionamiento lumínico
-**Propósito**: Separar aislamiento de acondicionamiento —la confusión central del epígrafe— y reunir en un sitio los valores normativos exigibles, que son datos cerrados de examen.
+**Propósito**: Separar aislamiento de acondicionamiento —la confusión central del epígrafe— y reunir en un sitio los valores normativos exigibles, que son datos cerrados.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 366" role="img" aria-label="Acondicionamiento de una sala de videoconferencia: distinción entre aislamiento acústico, que impide que el sonido entre o salga, y acondicionamiento acústico, que controla la reverberación interior; valores límite del tiempo de reverberación del Documento Básico HR del Código Técnico de la Edificación y valores de iluminación de la norma UNE-EN 12464-1 de 2022">
