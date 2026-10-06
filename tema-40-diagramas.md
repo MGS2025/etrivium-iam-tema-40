@@ -164,7 +164,7 @@
 **Propósito**: Separar sin ambigüedad los tres protocolos por su función —autenticar, autorizar y aprovisionar— y mostrar que la credencial nunca llega al proveedor de servicio.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-label="Esquema de la federación de identidad: el usuario se autentica ante el proveedor de identidad de su organización, que emite un aserto firmado al proveedor de servicio; la contraseña nunca llega a la plataforma. Se comparan SAML 2.0, OpenID Connect sobre OAuth 2.0 y SCIM 2.0 por su función">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 344" role="img" aria-label="Esquema de la federación de identidad: el usuario se autentica ante el proveedor de identidad de su organización, que emite un aserto firmado al proveedor de servicio; la contraseña nunca llega a la plataforma. Se comparan SAML 2.0, OpenID Connect sobre OAuth 2.0 y SCIM 2.0 por su función">
   <style>.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 10px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#333}.n3{font:8.5px system-ui,sans-serif;fill:#666}.w3{font:700 10px system-ui,sans-serif;fill:#fff}.r3{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g3{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
   <text x="340" y="19" text-anchor="middle" class="h3">Identidad federada: quién autentica, quién autoriza y quién aprovisiona</text>
 
@@ -192,7 +192,7 @@
   <rect x="22" y="98" width="636" height="24" rx="4" fill="#fbe9e9"/>
   <text x="340" y="114" text-anchor="middle" class="r3">LA CONTRASEÑA NUNCA LLEGA AL PROVEEDOR DE SERVICIO — solo llega una afirmación firmada por el proveedor de identidad</text>
 
-  <rect x="22" y="134" width="206" height="90" rx="4" fill="#eef4fa"/>
+  <rect x="22" y="134" width="206" height="94" rx="4" fill="#eef4fa"/>
   <rect x="22" y="134" width="206" height="20" rx="4" fill="#0055a0"/>
   <text x="125" y="148" text-anchor="middle" class="w3">SAML 2.0 — AUTENTICA</text>
   <text x="32" y="170" class="d3">OASIS, marzo de 2005. XML</text>
@@ -201,7 +201,7 @@
   <text x="32" y="210" class="d3">Perfil de navegador con POST</text>
   <text x="32" y="220" class="n3">El clásico de la federación en las AAPP</text>
 
-  <rect x="237" y="134" width="206" height="90" rx="4" fill="#eef4fa"/>
+  <rect x="237" y="134" width="206" height="94" rx="4" fill="#eef4fa"/>
   <rect x="237" y="134" width="206" height="20" rx="4" fill="#0055a0"/>
   <text x="340" y="148" text-anchor="middle" class="w3">OAuth 2.0 + OIDC</text>
   <text x="247" y="170" class="d3">OAuth 2.0 = RFC 6749: AUTORIZA</text>
@@ -210,7 +210,7 @@
   <text x="247" y="210" class="d3">en formato JWT (RFC 7519)</text>
   <text x="247" y="220" class="n3">OAuth por sí solo NO autentica</text>
 
-  <rect x="452" y="134" width="206" height="90" rx="4" fill="#e6f2ec"/>
+  <rect x="452" y="134" width="206" height="94" rx="4" fill="#e6f2ec"/>
   <rect x="452" y="134" width="206" height="20" rx="4" fill="#2d8659"/>
   <text x="555" y="148" text-anchor="middle" class="w3">SCIM 2.0 — APROVISIONA</text>
   <text x="462" y="170" class="d3">RFC 7643 esquema · RFC 7644</text>
@@ -219,13 +219,13 @@
   <text x="462" y="210" class="d3">Alta y baja propagadas solas</text>
   <text x="462" y="220" class="n3">Sin él nacen las cuentas huérfanas</text>
 
-  <rect x="22" y="238" width="636" height="46" rx="5" fill="none" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="340" y="256" text-anchor="middle" class="k3">LA FRASE QUE HAY QUE LLEVAR MEMORIZADA</text>
-  <text x="340" y="272" text-anchor="middle" class="k3">«OAuth 2.0 AUTORIZA · OpenID Connect AUTENTICA · SCIM APROVISIONA»</text>
+  <rect x="22" y="242" width="636" height="46" rx="5" fill="none" stroke="#0055a0" stroke-width="1.5"/>
+  <text x="340" y="260" text-anchor="middle" class="k3">LA FRASE QUE HAY QUE LLEVAR MEMORIZADA</text>
+  <text x="340" y="276" text-anchor="middle" class="k3">«OAuth 2.0 AUTORIZA · OpenID Connect AUTENTICA · SCIM APROVISIONA»</text>
 
-  <text x="340" y="300" text-anchor="middle" class="d3">El ENS lo exige en op.acc.5 (usuarios externos) y op.acc.6 (usuarios de la organización), que empujan hacia el segundo factor en MEDIA y ALTA</text>
+  <text x="340" y="304" text-anchor="middle" class="d3">El ENS lo exige en op.acc.5 (usuarios externos) y op.acc.6 (usuarios de la organización), que empujan hacia el segundo factor en MEDIA y ALTA</text>
 
-  <text x="658" y="328" text-anchor="end" class="n3">[Fuente: OASIS SAML 2.0 · RFC 6749 · RFC 7519 · RFC 7643 y 7644]</text>
+  <text x="658" y="332" text-anchor="end" class="n3">[Fuente: OASIS SAML 2.0 · RFC 6749 · RFC 7519 · RFC 7643 y 7644]</text>
 </svg>
 ```
 
@@ -237,7 +237,7 @@
 **Propósito**: Ordenar los canales por el turno que imponen al receptor, que es el criterio que de verdad decide la gobernanza de una plataforma, y colgar de cada uno su protocolo normalizado.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 328" role="img" aria-label="Los canales de comunicación de una plataforma de trabajo en grupo ordenados por el coste de interrupción que imponen al receptor, desde el repositorio documental y el correo, que son asíncronos, hasta la videoconferencia y la llamada, que son síncronos, con el protocolo normalizado de cada uno">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 332" role="img" aria-label="Los canales de comunicación de una plataforma de trabajo en grupo ordenados por el coste de interrupción que imponen al receptor, desde el repositorio documental y el correo, que son asíncronos, hasta la videoconferencia y la llamada, que son síncronos, con el protocolo normalizado de cada uno">
   <style>.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10px system-ui,sans-serif;fill:#0055a0}.d4{font:9px system-ui,sans-serif;fill:#333}.n4{font:8.5px system-ui,sans-serif;fill:#666}.w4{font:700 10px system-ui,sans-serif;fill:#fff}.r4{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
   <text x="340" y="19" text-anchor="middle" class="h4">Los canales, ordenados por el turno que imponen al receptor</text>
   <text x="340" y="35" text-anchor="middle" class="n4">La gobernanza de una plataforma consiste en decidir qué se comunica por cada uno. Convertirlo todo en síncrono es el error clásico</text>
@@ -251,44 +251,44 @@
   <text x="22" y="78" class="n4">Coste de interrupción BAJO: el receptor decide cuándo atiende</text>
   <text x="658" y="78" text-anchor="end" class="n4">Coste de interrupción ALTO: turno inmediato</text>
 
-  <rect x="22" y="88" width="152" height="76" rx="4" fill="#e6f2ec"/>
+  <rect x="22" y="88" width="152" height="80" rx="4" fill="#e6f2ec"/>
   <text x="98" y="105" text-anchor="middle" class="k4">REPOSITORIO Y WIKI</text>
   <text x="30" y="121" class="d4">Conocimiento duradero</text>
   <text x="30" y="134" class="d4">Historial de versiones</text>
   <text x="30" y="147" class="d4">WebDAV, RFC 4918</text>
   <text x="30" y="159" class="n4">Distinto tiempo, distinto lugar</text>
 
-  <rect x="184" y="88" width="152" height="76" rx="4" fill="#e6f2ec"/>
+  <rect x="184" y="88" width="152" height="80" rx="4" fill="#e6f2ec"/>
   <text x="260" y="105" text-anchor="middle" class="k4">CORREO ELECTRÓNICO</text>
   <text x="192" y="121" class="d4">El único canal interoperable</text>
   <text x="192" y="134" class="d4">entre organizaciones distintas</text>
   <text x="192" y="147" class="d4">SMTP 5321 · IMAP4rev2 9051</text>
   <text x="192" y="159" class="n4">Y la mayor superficie de ataque</text>
 
-  <rect x="346" y="88" width="152" height="76" rx="4" fill="#fdf3e3"/>
+  <rect x="346" y="88" width="152" height="80" rx="4" fill="#fdf3e3"/>
   <text x="422" y="105" text-anchor="middle" class="k4">MENSAJERÍA Y PRESENCIA</text>
   <text x="354" y="121" class="d4">Cuasi síncrono: se espera</text>
   <text x="354" y="134" class="d4">respuesta pronto, no ya</text>
   <text x="354" y="147" class="d4">XMPP 6120 y 6121 · PIDF 3863</text>
   <text x="354" y="159" class="n4">La presencia es dato laboral</text>
 
-  <rect x="508" y="88" width="150" height="76" rx="4" fill="#fbe9e9"/>
+  <rect x="508" y="88" width="150" height="80" rx="4" fill="#fbe9e9"/>
   <text x="583" y="105" text-anchor="middle" class="k4">VIDEOCONFERENCIA</text>
   <text x="516" y="121" class="d4">Exige presencia simultánea</text>
   <text x="516" y="134" class="d4">de todas las partes</text>
   <text x="516" y="147" class="d4">SIP 3261 · RTP 3550 · WebRTC</text>
   <text x="516" y="159" class="n4">Es toda la sección 2 del tema</text>
 
-  <rect x="22" y="180" width="636" height="42" rx="4" fill="#eef4fa"/>
-  <text x="32" y="196" class="k4">LA SEÑALIZACIÓN MODERNA VIAJA POR WEBSOCKET (RFC 6455), NO POR HTTP CONVENCIONAL</text>
-  <text x="32" y="211" class="d4">Canal bidireccional y persistente, abierto promoviendo una conexión HTTP. Sostiene el «alguien está escribiendo» y la señalización</text>
+  <rect x="22" y="184" width="636" height="42" rx="4" fill="#eef4fa"/>
+  <text x="32" y="200" class="k4">LA SEÑALIZACIÓN MODERNA VIAJA POR WEBSOCKET (RFC 6455), NO POR HTTP CONVENCIONAL</text>
+  <text x="32" y="215" class="d4">Canal bidireccional y persistente, abierto promoviendo una conexión HTTP. Sostiene el «alguien está escribiendo» y la señalización</text>
 
-  <rect x="22" y="232" width="636" height="58" rx="5" fill="none" stroke="#d13c3c" stroke-width="1.5"/>
-  <text x="340" y="249" text-anchor="middle" class="r4">DOS TRAMPAS COMUNES</text>
-  <text x="340" y="266" text-anchor="middle" class="d4">XMPP NO es un protocolo de videoconferencia: su señalización multimedia es la extensión Jingle (XEP-0166)</text>
-  <text x="340" y="281" text-anchor="middle" class="d4">Y la presencia publicada es un dato sobre la actividad del empleado: arts. 87 y 88 de la LOPDGDD</text>
+  <rect x="22" y="236" width="636" height="58" rx="5" fill="none" stroke="#d13c3c" stroke-width="1.5"/>
+  <text x="340" y="253" text-anchor="middle" class="r4">DOS TRAMPAS COMUNES</text>
+  <text x="340" y="270" text-anchor="middle" class="d4">XMPP NO es un protocolo de videoconferencia: su señalización multimedia es la extensión Jingle (XEP-0166)</text>
+  <text x="340" y="285" text-anchor="middle" class="d4">Y la presencia publicada es un dato sobre la actividad del empleado: arts. 87 y 88 de la LOPDGDD</text>
 
-  <text x="658" y="316" text-anchor="end" class="n4">[Fuente: RFC 6120, 6121, 6455, 9051 · LO 3/2018]</text>
+  <text x="658" y="320" text-anchor="end" class="n4">[Fuente: RFC 6120, 6121, 6455, 9051 · LO 3/2018]</text>
 </svg>
 ```
 
@@ -363,7 +363,7 @@
 **Propósito**: Seguir el dato desde que nace hasta que se destruye y colgar de cada tramo el control y la medida del ENS que le corresponden, incluida la más olvidada de todas.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 326" role="img" aria-label="El ciclo de vida de la información en un espacio de trabajo compartido, en cinco tramos: clasificación, protección, control de la compartición, conservación y destrucción, con la medida del Esquema Nacional de Seguridad aplicable a cada tramo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-label="El ciclo de vida de la información en un espacio de trabajo compartido, en cinco tramos: clasificación, protección, control de la compartición, conservación y destrucción, con la medida del Esquema Nacional de Seguridad aplicable a cada tramo">
   <style>.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.d6{font:9px system-ui,sans-serif;fill:#333}.n6{font:8.5px system-ui,sans-serif;fill:#666}.w6{font:700 9.5px system-ui,sans-serif;fill:#fff}.r6{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.c6{font:700 9px system-ui,sans-serif;fill:#e89822}</style>
   <text x="340" y="19" text-anchor="middle" class="h6">El ciclo de vida del dato, y el control que toca en cada tramo</text>
 
@@ -403,25 +403,25 @@
   <text x="32" y="153" class="d6">«Se retirará toda la información adicional contenida en CAMPOS OCULTOS, METADATOS, COMENTARIOS O REVISIONES ANTERIORES,</text>
   <text x="32" y="166" class="d6">salvo cuando sea pertinente para el receptor». Confidencialidad. APLICA EN LOS TRES NIVELES, incluido el BAJO</text>
 
-  <rect x="22" y="186" width="312" height="72" rx="4" fill="#eef4fa"/>
+  <rect x="22" y="186" width="312" height="76" rx="4" fill="#eef4fa"/>
   <text x="32" y="202" class="k6">LAS DOS FUERZAS QUE TIRAN EN SENTIDO CONTRARIO</text>
   <text x="32" y="217" class="d6">El RGPD empuja a BORRAR: minimización (art. 5.1.c) y</text>
   <text x="32" y="230" class="d6">limitación del plazo (art. 5.1.e)</text>
   <text x="32" y="243" class="d6">El archivo y la prueba empujan a CONSERVAR</text>
   <text x="32" y="254" class="n6">Se concilian con retención diferenciada por tipo</text>
 
-  <rect x="346" y="186" width="312" height="72" rx="4" fill="#e6f2ec"/>
+  <rect x="346" y="186" width="312" height="76" rx="4" fill="#e6f2ec"/>
   <text x="356" y="202" class="k6">EL REPARTO RAZONABLE EN UNA PLATAFORMA</text>
   <text x="356" y="217" class="d6">Mensajería: retención CORTA</text>
   <text x="356" y="230" class="d6">Correo: retención MEDIA</text>
   <text x="356" y="243" class="d6">Documento de expediente: la que fije el archivo</text>
   <text x="356" y="254" class="n6">Grabación de reunión: la MÁS CORTA de todas</text>
 
-  <rect x="22" y="270" width="636" height="34" rx="5" fill="none" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="340" y="286" text-anchor="middle" class="k6">EL MAYOR VECTOR DE FUGA NO ES EL MALICIOSO: ES EL ACCIDENTAL</text>
-  <text x="340" y="299" text-anchor="middle" class="d6">El enlace de compartición demasiado abierto y el adjunto al destinatario equivocado causan más incidentes que cualquier ataque</text>
+  <rect x="22" y="274" width="636" height="34" rx="5" fill="none" stroke="#0055a0" stroke-width="1.5"/>
+  <text x="340" y="290" text-anchor="middle" class="k6">EL MAYOR VECTOR DE FUGA NO ES EL MALICIOSO: ES EL ACCIDENTAL</text>
+  <text x="340" y="303" text-anchor="middle" class="d6">El enlace de compartición demasiado abierto y el adjunto al destinatario equivocado causan más incidentes que cualquier ataque</text>
 
-  <text x="658" y="318" text-anchor="end" class="n6">[Fuente: RD 311/2022, anexo II · Reglamento (UE) 2016/679]</text>
+  <text x="658" y="322" text-anchor="end" class="n6">[Fuente: RD 311/2022, anexo II · Reglamento (UE) 2016/679]</text>
 </svg>
 ```
 
@@ -433,7 +433,7 @@
 **Propósito**: Es el diagrama de cálculo del tema. Fija las fórmulas de la malla y muestra por qué el cuello de botella es la subida y no la bajada.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" role="img" aria-label="Comparación del número de flujos en tres topologías de videoconferencia: punto a punto entre dos participantes, malla completa entre cinco participantes con veinte flujos, y servidor central con una sola conexión por participante; con la tabla de crecimiento del ancho de banda de subida según el número de participantes">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 356" role="img" aria-label="Comparación del número de flujos en tres topologías de videoconferencia: punto a punto entre dos participantes, malla completa entre cinco participantes con veinte flujos, y servidor central con una sola conexión por participante; con la tabla de crecimiento del ancho de banda de subida según el número de participantes">
   <style>.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 10px system-ui,sans-serif;fill:#0055a0}.d7{font:9px system-ui,sans-serif;fill:#333}.n7{font:8.5px system-ui,sans-serif;fill:#666}.w7{font:700 9px system-ui,sans-serif;fill:#fff}.r7{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g7{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
   <text x="340" y="19" text-anchor="middle" class="h7">Cuántos flujos genera una reunión, según la topología</text>
 
@@ -474,30 +474,30 @@
   </g>
   <text x="575" y="180" text-anchor="middle" class="g7">1 conexión por participante</text>
 
-  <rect x="22" y="196" width="636" height="46" rx="4" fill="#eef4fa"/>
+  <rect x="22" y="196" width="636" height="50" rx="4" fill="#eef4fa"/>
   <text x="32" y="212" class="k7">LAS FÓRMULAS QUE HAY QUE SABER</text>
   <text x="32" y="227" class="d7">Malla: CADA participante sostiene N−1 subidas y N−1 bajadas · EL SISTEMA, N × (N−1) flujos · Crecimiento CUADRÁTICO en el sistema</text>
   <text x="32" y="238" class="n7">Con servidor central: cada participante sube 1 flujo. Baja 1 si el servidor MEZCLA (MCU) y hasta N−1 si REENVÍA (SFU)</text>
 
-  <rect x="22" y="252" width="636" height="22" rx="3" fill="#0055a0"/>
-  <text x="70" y="267" text-anchor="middle" class="w7">Participantes</text>
-  <text x="200" y="267" text-anchor="middle" class="w7">Flujos del sistema en malla</text>
-  <text x="380" y="267" text-anchor="middle" class="w7">Subida por participante (720p a 1,54 Mbit/s)</text>
-  <text x="570" y="267" text-anchor="middle" class="w7">Viabilidad</text>
+  <rect x="22" y="256" width="636" height="22" rx="3" fill="#0055a0"/>
+  <text x="70" y="271" text-anchor="middle" class="w7">Participantes</text>
+  <text x="200" y="271" text-anchor="middle" class="w7">Flujos del sistema en malla</text>
+  <text x="380" y="271" text-anchor="middle" class="w7">Subida por participante (720p a 1,54 Mbit/s)</text>
+  <text x="570" y="271" text-anchor="middle" class="w7">Viabilidad</text>
 
-  <rect x="22" y="276" width="636" height="18" fill="#f5f8fb"/>
-  <text x="70" y="289" text-anchor="middle" class="d7">4</text><text x="200" y="289" text-anchor="middle" class="d7">12</text>
-  <text x="380" y="289" text-anchor="middle" class="d7">4,6 Mbit/s</text><text x="570" y="289" text-anchor="middle" class="g7">Viable</text>
+  <rect x="22" y="280" width="636" height="18" fill="#f5f8fb"/>
+  <text x="70" y="293" text-anchor="middle" class="d7">4</text><text x="200" y="293" text-anchor="middle" class="d7">12</text>
+  <text x="380" y="293" text-anchor="middle" class="d7">4,6 Mbit/s</text><text x="570" y="293" text-anchor="middle" class="g7">Viable</text>
 
-  <rect x="22" y="294" width="636" height="18" fill="#fff"/>
-  <text x="70" y="307" text-anchor="middle" class="d7">6</text><text x="200" y="307" text-anchor="middle" class="d7">30</text>
-  <text x="380" y="307" text-anchor="middle" class="d7">7,7 Mbit/s</text><text x="570" y="307" text-anchor="middle" class="d7">En el límite</text>
+  <rect x="22" y="298" width="636" height="18" fill="#fff"/>
+  <text x="70" y="311" text-anchor="middle" class="d7">6</text><text x="200" y="311" text-anchor="middle" class="d7">30</text>
+  <text x="380" y="311" text-anchor="middle" class="d7">7,7 Mbit/s</text><text x="570" y="311" text-anchor="middle" class="d7">En el límite</text>
 
-  <rect x="22" y="312" width="636" height="18" fill="#fbe9e9"/>
-  <text x="70" y="325" text-anchor="middle" class="d7">10</text><text x="200" y="325" text-anchor="middle" class="d7">90</text>
-  <text x="380" y="325" text-anchor="middle" class="d7">13,9 Mbit/s</text><text x="570" y="325" text-anchor="middle" class="r7">Inviable: manda la SUBIDA</text>
+  <rect x="22" y="316" width="636" height="18" fill="#fbe9e9"/>
+  <text x="70" y="329" text-anchor="middle" class="d7">10</text><text x="200" y="329" text-anchor="middle" class="d7">90</text>
+  <text x="380" y="329" text-anchor="middle" class="d7">13,9 Mbit/s</text><text x="570" y="329" text-anchor="middle" class="r7">Inviable: manda la SUBIDA</text>
 
-  <text x="658" y="346" text-anchor="end" class="n7">[Fuente: RFC 7667, RTP Topologies · elaboración propia]</text>
+  <text x="658" y="350" text-anchor="end" class="n7">[Fuente: RFC 7667, RTP Topologies · elaboración propia]</text>
 </svg>
 ```
 
@@ -509,7 +509,7 @@
 **Propósito**: Fijar la comparación fila a fila, incluida la consecuencia que casi nunca se explica: la MCU impide el cifrado extremo a extremo y la SFU lo permite mediante SFrame.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" role="img" aria-label="Comparación entre la unidad de control multipunto (MCU), que decodifica, mezcla y vuelve a codificar, y la unidad de reenvío selectivo (SFU), que reenvía los flujos sin decodificarlos, en siete criterios: bajada, cómputo del servidor, retardo, composición, cifrado extremo a extremo, exigencia al cliente y uso típico">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 356" role="img" aria-label="Comparación entre la unidad de control multipunto (MCU), que decodifica, mezcla y vuelve a codificar, y la unidad de reenvío selectivo (SFU), que reenvía los flujos sin decodificarlos, en siete criterios: bajada, cómputo del servidor, retardo, composición, cifrado extremo a extremo, exigencia al cliente y uso típico">
   <style>.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10px system-ui,sans-serif;fill:#0055a0}.d8{font:9px system-ui,sans-serif;fill:#333}.n8{font:8.5px system-ui,sans-serif;fill:#666}.w8{font:700 10px system-ui,sans-serif;fill:#fff}.r8{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g8{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
   <text x="340" y="19" text-anchor="middle" class="h8">MCU frente a SFU: la comparación central de la sección 2</text>
 
@@ -567,19 +567,19 @@
   <text x="340" y="251" text-anchor="middle" class="d8">Salas heredadas, interoperación</text>
   <text x="560" y="251" text-anchor="middle" class="d8">Reunión moderna en la nube</text>
 
-  <rect x="22" y="266" width="312" height="58" rx="4" fill="#eef4fa"/>
+  <rect x="22" y="266" width="312" height="62" rx="4" fill="#eef4fa"/>
   <text x="32" y="282" class="k8">LAS DOS TÉCNICAS QUE HACEN VIABLE LA SFU</text>
   <text x="32" y="296" class="d8">SIMULCAST (RFC 8853): cada emisor sube VARIAS calidades</text>
   <text x="32" y="308" class="d8">a la vez y la SFU elige la que conviene a cada receptor</text>
   <text x="32" y="320" class="d8">SVC: un flujo en CAPAS; la SFU descarta capas</text>
 
-  <rect x="346" y="266" width="312" height="58" rx="4" fill="#e6f2ec"/>
+  <rect x="346" y="266" width="312" height="62" rx="4" fill="#e6f2ec"/>
   <text x="356" y="282" class="k8">EL CIFRADO DE GRUPO, NORMALIZADO EN 2023 Y 2024</text>
   <text x="356" y="296" class="d8">SFrame (RFC 9605, agosto de 2024): cifra el FOTOGRAMA,</text>
   <text x="356" y="308" class="d8">no el paquete; la SFU encamina pero no descifra</text>
   <text x="356" y="320" class="d8">MLS (RFC 9420, julio de 2023): lo mismo para mensajería</text>
 
-  <text x="658" y="344" text-anchor="end" class="n8">[Fuente: RFC 7667 · RFC 8853 · RFC 9605 · RFC 9420]</text>
+  <text x="658" y="348" text-anchor="end" class="n8">[Fuente: RFC 7667 · RFC 8853 · RFC 9605 · RFC 9420]</text>
 </svg>
 ```
 
@@ -765,7 +765,7 @@
   <text x="356" y="265" class="d11">negociadas por DTLS-SRTP; datos por SCTP sobre DTLS</text>
 
   <text x="32" y="278" class="d11">intercambia: descripciones SDP con oferta/respuesta (JSEP)</text>
-  <text x="356" y="278" class="d11">Por tanto, el cifrado NO es opcional</text>
+  <text x="356" y="278" class="d11">Ningún flujo WebRTC viaja en claro</text>
 
   <rect x="22" y="300" width="636" height="24" rx="4" fill="#fdf3e3"/>
   <text x="340" y="316" text-anchor="middle" class="k11">CÓDECS OBLIGATORIOS: audio, OPUS y G.711 (RFC 7874) · vídeo, VP8 y H.264 Constrained Baseline (RFC 7742)</text>
@@ -782,7 +782,7 @@
 **Propósito**: Deshacer la confusión más repetida del tema separando las tres piezas por su función y por su coste, y mostrando los tres tipos de candidato.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 378" role="img" aria-label="Esquema de la travesía de traducción de direcciones de red en WebRTC: STUN descubre la dirección pública y no transporta media, TURN retransmite todo el tráfico cuando no hay camino directo y es el recurso caro, e ICE es el algoritmo que recoge los tres tipos de candidato, los empareja y elige el mejor camino">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 382" role="img" aria-label="Esquema de la travesía de traducción de direcciones de red en WebRTC: STUN descubre la dirección pública y no transporta media, TURN retransmite todo el tráfico cuando no hay camino directo y es el recurso caro, e ICE es el algoritmo que recoge los tres tipos de candidato, los empareja y elige el mejor camino">
   <style>.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 10px system-ui,sans-serif;fill:#0055a0}.d12{font:9px system-ui,sans-serif;fill:#333}.n12{font:8.5px system-ui,sans-serif;fill:#666}.w12{font:700 9.5px system-ui,sans-serif;fill:#fff}.r12{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g12{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
   <text x="340" y="19" text-anchor="middle" class="h12">Travesía de NAT: tres piezas que se confunden y no deben confundirse</text>
 
@@ -809,7 +809,7 @@
   <text x="340" y="132" text-anchor="middle" class="d12">Los dos son SERVIDORES AUXILIARES y NO están en el camino del media: STUN solo responde a una pregunta y TURN</text>
   <text x="340" y="144" text-anchor="middle" class="d12">solo entra en juego cuando el camino directo no existe. Quien decide cuál se usa es ICE, que no es un servidor</text>
 
-  <rect x="22" y="158" width="206" height="88" rx="4" fill="#e6f2ec"/>
+  <rect x="22" y="158" width="206" height="92" rx="4" fill="#e6f2ec"/>
   <rect x="22" y="158" width="206" height="20" rx="4" fill="#2d8659"/>
   <text x="125" y="172" text-anchor="middle" class="w12">STUN — RFC 8489 (feb. 2020)</text>
   <text x="32" y="193" class="g12">PREGUNTA</text>
@@ -818,7 +818,7 @@
   <text x="32" y="233" class="d12">reflexivo por servidor</text>
   <text x="32" y="243" class="n12">NO transporta media. Obsoletó la 5389</text>
 
-  <rect x="237" y="158" width="206" height="88" rx="4" fill="#fbe9e9"/>
+  <rect x="237" y="158" width="206" height="92" rx="4" fill="#fbe9e9"/>
   <rect x="237" y="158" width="206" height="20" rx="4" fill="#d13c3c"/>
   <text x="340" y="172" text-anchor="middle" class="w12">TURN — RFC 8656 (feb. 2020)</text>
   <text x="247" y="193" class="r12">CARGA</text>
@@ -827,7 +827,7 @@
   <text x="247" y="233" class="d12">Funciona siempre; hay que dimensionarlo</text>
   <text x="247" y="243" class="n12">Obsoletó las RFC 5766 y 6156</text>
 
-  <rect x="452" y="158" width="206" height="88" rx="4" fill="#eef4fa"/>
+  <rect x="452" y="158" width="206" height="92" rx="4" fill="#eef4fa"/>
   <rect x="452" y="158" width="206" height="20" rx="4" fill="#0055a0"/>
   <text x="555" y="172" text-anchor="middle" class="w12">ICE — RFC 8445 (jul. 2018)</text>
   <text x="462" y="193" class="k12">DECIDE</text>
@@ -836,29 +836,29 @@
   <text x="462" y="233" class="d12">comprueba y elige el mejor camino</text>
   <text x="462" y="243" class="n12">Obsoletó la RFC 5245</text>
 
-  <rect x="22" y="260" width="636" height="20" rx="3" fill="#0055a0"/>
-  <text x="130" y="274" text-anchor="middle" class="w12">Tipo de candidato</text>
-  <text x="360" y="274" text-anchor="middle" class="w12">De dónde sale</text>
-  <text x="570" y="274" text-anchor="middle" class="w12">Preferencia de ICE</text>
+  <rect x="22" y="264" width="636" height="20" rx="3" fill="#0055a0"/>
+  <text x="130" y="278" text-anchor="middle" class="w12">Tipo de candidato</text>
+  <text x="360" y="278" text-anchor="middle" class="w12">De dónde sale</text>
+  <text x="570" y="278" text-anchor="middle" class="w12">Preferencia de ICE</text>
 
-  <rect x="22" y="282" width="636" height="18" fill="#f5f8fb"/>
-  <text x="130" y="295" text-anchor="middle" class="d12">Anfitrión (host)</text>
-  <text x="360" y="295" text-anchor="middle" class="d12">La dirección local de la propia interfaz</text>
-  <text x="570" y="295" text-anchor="middle" class="g12">La más alta</text>
+  <rect x="22" y="286" width="636" height="18" fill="#f5f8fb"/>
+  <text x="130" y="299" text-anchor="middle" class="d12">Anfitrión (host)</text>
+  <text x="360" y="299" text-anchor="middle" class="d12">La dirección local de la propia interfaz</text>
+  <text x="570" y="299" text-anchor="middle" class="g12">La más alta</text>
 
-  <rect x="22" y="300" width="636" height="18" fill="#fff"/>
-  <text x="130" y="313" text-anchor="middle" class="d12">Reflexivo por servidor</text>
-  <text x="360" y="313" text-anchor="middle" class="d12">La que descubre STUN a través del NAT</text>
-  <text x="570" y="313" text-anchor="middle" class="d12">Intermedia</text>
+  <rect x="22" y="304" width="636" height="18" fill="#fff"/>
+  <text x="130" y="317" text-anchor="middle" class="d12">Reflexivo por servidor</text>
+  <text x="360" y="317" text-anchor="middle" class="d12">La que descubre STUN a través del NAT</text>
+  <text x="570" y="317" text-anchor="middle" class="d12">Intermedia</text>
 
-  <rect x="22" y="318" width="636" height="18" fill="#fbe9e9"/>
-  <text x="130" y="331" text-anchor="middle" class="d12">Retransmitido (relay)</text>
-  <text x="360" y="331" text-anchor="middle" class="d12">La que ofrece TURN retransmitiendo</text>
-  <text x="570" y="331" text-anchor="middle" class="r12">La más baja: último recurso</text>
+  <rect x="22" y="322" width="636" height="18" fill="#fbe9e9"/>
+  <text x="130" y="335" text-anchor="middle" class="d12">Retransmitido (relay)</text>
+  <text x="360" y="335" text-anchor="middle" class="d12">La que ofrece TURN retransmitiendo</text>
+  <text x="570" y="335" text-anchor="middle" class="r12">La más baja: último recurso</text>
 
-  <text x="340" y="352" text-anchor="middle" class="k12">REGLA MNEMOTÉCNICA: STUN PREGUNTA · TURN CARGA · ICE DECIDE</text>
+  <text x="340" y="356" text-anchor="middle" class="k12">REGLA MNEMOTÉCNICA: STUN PREGUNTA · TURN CARGA · ICE DECIDE</text>
 
-  <text x="658" y="368" text-anchor="end" class="n12">[Fuente: RFC 8489 · RFC 8656 · RFC 8445]</text>
+  <text x="658" y="372" text-anchor="end" class="n12">[Fuente: RFC 8489 · RFC 8656 · RFC 8445]</text>
 </svg>
 ```
 
@@ -871,7 +871,7 @@
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 346" role="img" aria-label="Tabla de códecs de vídeo y de audio usados en videoconferencia, con su organismo, año y característica principal, marcando en verde los cuatro obligatorios en WebRTC: Opus y G punto 711 en audio y VP8 y H punto 264 en vídeo, y mostrando la escala de eficiencia por generación">
-  <style>.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 10px system-ui,sans-serif;fill:#0055a0}.d13{font:9px system-ui,sans-serif;fill:#333}.n13{font:8.5px system-ui,sans-serif;fill:#666}.w13{font:700 9.5px system-ui,sans-serif;fill:#fff}.g13{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+  <style>.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 10px system-ui,sans-serif;fill:#0055a0}.d13{font:9px system-ui,sans-serif;fill:#333}.n13{font:8.5px system-ui,sans-serif;fill:#666}.w13{font:700 9.5px system-ui,sans-serif;fill:#fff}.g13{font:700 8.3px system-ui,sans-serif;fill:#2d8659}</style>
   <text x="340" y="19" text-anchor="middle" class="h13">Códecs: los cuatro obligatorios en WebRTC y la escala de eficiencia</text>
 
   <rect x="22" y="32" width="636" height="20" rx="3" fill="#0055a0"/>
@@ -1155,21 +1155,21 @@
   <rect x="22" y="248" width="636" height="18" fill="#fdf3e3"/>
   <text x="200" y="261" text-anchor="middle" class="d16">Aula o sala de conferencias</text>
   <text x="452" y="261" text-anchor="middle" class="d16">Volumen MAYOR que 350 m³</text>
-  <text x="610" y="261" text-anchor="middle" class="k16">Estudio específico</text>
+  <text x="610" y="261" text-anchor="middle" class="k16" style="font-size:8.6px">Estudio específico</text>
 
-  <rect x="22" y="276" width="312" height="60" rx="4" fill="#eef4fa"/>
+  <rect x="22" y="276" width="312" height="64" rx="4" fill="#eef4fa"/>
   <text x="32" y="292" class="k16">ILUMINACIÓN — UNE-EN 12464-1:2022</text>
   <text x="32" y="307" class="d16">Oficinas y salas de reuniones y conferencias:</text>
   <text x="32" y="320" class="d16">500 lx · UGR ≤ 19 · Uo ≥ 0,60 · Ra ≥ 80</text>
-  <text x="32" y="331" class="n16">Sobre el plano de trabajo, a 0,85 m del suelo</text>
+  <text x="32" y="333" class="n16">Sobre el plano de trabajo, a 0,85 m del suelo</text>
 
-  <rect x="346" y="276" width="312" height="60" rx="4" fill="#fdf3e3"/>
+  <rect x="346" y="276" width="312" height="64" rx="4" fill="#fdf3e3"/>
   <text x="356" y="292" class="k16">LAS TRES REGLAS PROPIAS DE UNA SALA DE VÍDEO</text>
   <text x="356" y="307" class="d16">1. Luz DE FRENTE, no de detrás: la ventana al fondo</text>
   <text x="356" y="320" class="d16">convierte a la persona en silueta   2. Luz DIFUSA</text>
-  <text x="356" y="331" class="d16">3. Zonificada y regulable: la luz y la pantalla se estorban</text>
+  <text x="356" y="333" class="d16">3. Zonificada y regulable: la luz y la pantalla se estorban</text>
 
-  <text x="658" y="358" text-anchor="end" class="n16">[Fuente: CTE DB-HR (RD 1371/2007), ap. 2.2 · UNE-EN 12464-1:2022 · ANSI/AVIXA V201.01:2021]</text>
+  <text x="658" y="360" text-anchor="end" class="n16">[Fuente: CTE DB-HR (RD 1371/2007), ap. 2.2 · UNE-EN 12464-1:2022 · ANSI/AVIXA V201.01:2021]</text>
 </svg>
 ```
 
